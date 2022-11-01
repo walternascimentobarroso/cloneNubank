@@ -74,69 +74,15 @@ export function Header() {
           horizontal
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{marginLeft: 24, paddingRight: 50}}>
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
+            <OptionView key={index}>
+              <OptionIcon>
+                <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
+              </OptionIcon>
 
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
-
-          <OptionView>
-            <OptionIcon>
-              <FontAwesomeIcon icon={faMoneyBill} size={20} color="#000" />
-            </OptionIcon>
-
-            <OptionText>PIX</OptionText>
-          </OptionView>
+              <OptionText>PIX</OptionText>
+            </OptionView>
+          ))}
         </ScrollView>
       </ViewScrollView>
     </>
