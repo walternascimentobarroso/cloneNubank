@@ -5,16 +5,11 @@ import {
   CardMyCardsView,
   CardInfoView,
   CardInfoItem,
-  CardFunctionView,
-  CardFunctionRow,
-  Touchable,
 } from './Home.styles';
 import {Header} from '../../components/Header/Header';
 import {Card} from '../../components/Card/Card';
 import {CardInfo} from '../../components/CardInfo/CardInfo';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faCreditCard} from '@fortawesome/free-solid-svg-icons/faCreditCard';
-import {faChevronRight} from '@fortawesome/free-solid-svg-icons/faChevronRight';
+import {CardFunctionView} from '../../components/CardFunctionView/CardFunctionView';
 
 export default function Home() {
   return (
@@ -47,22 +42,7 @@ export default function Home() {
           </ScrollView>
         </CardInfoView>
 
-        <CardFunctionView>
-          <FontAwesomeIcon icon={faCreditCard} size={20} color="#000" />
-
-          <CardFunctionRow>
-            <Text style={styles.subtitle}>CardFunctionRow</Text>
-            <FontAwesomeIcon icon={faChevronRight} size={20} color="#000" />
-          </CardFunctionRow>
-
-          <Text style={styles.textGray}>Fatura Atual</Text>
-          <Text style={styles.title}>R$ 239,99</Text>
-          <Text style={styles.textGray}>Limite Disponivel de 3.000,00</Text>
-
-          <Touchable>
-            <Text style={styles.textButton}>Parcelar Fatura</Text>
-          </Touchable>
-        </CardFunctionView>
+        <CardFunctionView />
       </ScrollView>
     </Container>
   );
